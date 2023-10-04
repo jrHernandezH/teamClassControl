@@ -4,6 +4,7 @@
     display: grid;
     place-items: center;
     background: url(../assets/images/back-team.jpg) no-repeat center/cover;
+    background-clip: border-box;
 }
 .form-container {
     width: 320px;
@@ -11,6 +12,7 @@
     background-color: rgba(17, 24, 39, 1);
     padding: 2rem;
     color: rgba(243, 244, 246, 1);
+    filter: brightness(0.9);
   }
   
   .title {
@@ -102,4 +104,12 @@
     line-height: 1.25rem;
     color: rgba(156, 163, 175, 1);
   }
-  
+  .social-icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .fab{
+    font-size: 2em;
+    color:rgba(167, 139, 250, 1);
+  }

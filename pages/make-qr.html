@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta property="og:title" content="Class Control" />
+    <meta
+      property="og:description"
+      content="Entorno de trabajo para el equipo Class Control"
+    />
+    <meta
+      property="og:image"
+      content="https://jrhernandezh.github.io/teamClassControl/assets/images/back-team.jpg"
+    />
+    <title>Team classControl</title>
+    <link rel="stylesheet" href="../styles/index.css" />
+  </head>
+  <body>
+    <div id="backHome" class="back-button">
+      <span class="arrow"></span>
+      Regresar
+    </div>
+
+    <div class="container-qr">
+      <div class="box-qr">
+        <div id="qr-container"></div>
+        <input
+          type="text"
+          id="input-text"
+          placeholder="Ingrese el texto para el código QR"
+        />
+        <button id="btn-generate">Generar código QR</button>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="../functions/createQr.js"></script>
+    <script src="../routes/qr.js"></script>
+  </body>
+</html>

@@ -17,6 +17,10 @@
     />
     <title>Team classControl</title>
     <link rel="stylesheet" href="./styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container">
@@ -30,6 +34,7 @@
               name="username"
               id="username"
               placeholder=""
+              required
             />
           </div>
           <div class="input-group">
@@ -39,16 +44,41 @@
               name="password"
               id="password"
               placeholder=""
+              required
             />
           </div>
-          <button class="sign">Sign in</button>
+          <button class="sign" id="Sign">Sign in</button>
         </form>
         <div class="social-message-dev">
           <div class="line"></div>
-          <p class="message">by DevBobby</p>
+          <p class="dev">by DevBobby</p>
           <div class="line"></div>
+        </div>
+        <div class="social-icons">
+          <a
+            href="https://www.instagram.com/tucuenta"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/tuperfil"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/tucuenta"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-github"></i>
+          </a>
         </div>
       </div>
     </div>
   </body>
+  <script type="module" src="./index.js"></script>
 </html>
