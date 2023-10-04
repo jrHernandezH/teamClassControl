@@ -93,11 +93,11 @@
 
 @media (300px <= width <= 700px) {
     .container-tasks{
+        margin: 20px 0;
         width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
-        margin-bottom: 20px;
     }
     .services{
         flex-direction: column;
@@ -130,5 +130,5 @@
         font-weight: 600;
         color: rgb(102, 102, 102);
     }
-    
+
 }

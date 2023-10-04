@@ -45,26 +45,7 @@
     background-color: #0056b3;
 }
 
-.back-button {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    text-decoration: none;
-    color: #007bff;
-    display: flex;
-    align-items: center;
-}
-.back-button:hover{
-    cursor: pointer;
-}
-.arrow {
-    width: 16px;
-    height: 16px;
-    border-left: 2px solid #007bff; 
-    border-bottom: 2px solid #007bff; 
-    transform: rotate(45deg); 
-    margin-right: 5px; 
-}
+
 
 @media (300px <= width <= 700px) {
     .container-qr {
