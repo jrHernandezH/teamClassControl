@@ -13,5 +13,6 @@ database.addEventListener('click', () => {
 const backLogin = document.getElementById('backLogin');
 
 backLogin.addEventListener('click', () => {
+    localStorage.removeItem('user')
     window.location.href = '../index.html'
 })

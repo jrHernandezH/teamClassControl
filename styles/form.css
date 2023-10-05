@@ -113,3 +113,8 @@
     font-size: 2em;
     color:rgba(167, 139, 250, 1);
   }
+  #errorUser{
+    display: block;
+    margin: 10px 0;
+    color: rgb(158, 131, 238);
+  }

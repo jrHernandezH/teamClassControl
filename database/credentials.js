@@ -21,11 +21,12 @@ export const login = async (username, password) => {
 
     if (user) {
         // Usuario autenticado exitosamente
+        localStorage.setItem("user", user.name);
         console.log("Inicio de sesión exitoso");
         window.location.href = './pages/home.html';
     } else {
-        console.log("Credenciales incorrectas");
-        // Puedes mostrar un mensaje de error al usuario
+        const errorUser = 'Credenciales no encontradas';
+        throw new Error(errorUser);
     }
 }
 

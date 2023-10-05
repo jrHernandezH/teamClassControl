@@ -1,19 +1,24 @@
 import { login } from "./database/credentials.js";
+import { getUserLocal } from "./routes/login.js";
 
-
-const sign = () => {
+const sign = async () => {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
-    login(username, password)
+    try {
+        await login(username, password);
+    } catch (error) {
+        document.getElementById('errorUser').innerHTML = error.message;
+    }
 }
 
 const form = document.querySelector('form');
 
 form.addEventListener('submit', (event) => {
-    // Obtén los valores de los inputs
     sign();
-    // Evita que el formulario se envíe
     event.preventDefault();
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    getUserLocal();
+});
